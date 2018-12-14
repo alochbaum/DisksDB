@@ -5,8 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DisksDB"
         mc:Ignorable="d"
-        Title="Disks Database" Height="450" Width="800">
-    <Grid>
-        
+        Title="Disks Database" Height="200" Width="400">
+    <Grid ShowGridLines="True">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="33*"/>
+            <ColumnDefinition Width="33*"/>
+            <ColumnDefinition Width="33*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="33*"/>
+            <RowDefinition Height="33*"/>
+            <RowDefinition Height="33*"/>
+            <RowDefinition Height="33*"/>
+            <RowDefinition Height="33*"/>
+            <RowDefinition Height="33*"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="LbStatus" Grid.Row="0" Grid.ColumnSpan="3">Not connected to the database</Label>
+        <Button x:Name="BtnAddRow" Grid.Row="1" Grid.Column="0" Content="Add Disk" Width="75"/>
+
+
     </Grid>
 </Window>
